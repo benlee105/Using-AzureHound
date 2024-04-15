@@ -90,4 +90,8 @@ Once uploaded, wait till ingestion status shows complete then click on **Explore
 ![image](https://github.com/benlee105/Using-AzureHound/assets/62729308/b0f49515-7bf6-4b42-ae99-face9064df12)  
 
 ## Step 9: Query BloodHound
+To be done once I can get proper data in.  
 
+## Other Notes
+Notes for Azurehound command switches - https://bloodhound.readthedocs.io/en/latest/data-collection/azurehound-all-flags.html
+Notes for BloodHound AzureHound queries https://cloud.hacktricks.xyz/pentesting-cloud/azure-security#azurehound
