@@ -54,3 +54,40 @@ Test the command below
 
 
 ![image](https://github.com/benlee105/Using-AzureHound/assets/62729308/b8a10c84-42d2-48e7-975b-24181831eb3f)
+
+## Step 6: Load BloodHound Docker
+Run the command below on a machine with Docker and Docker Compose installed
+
+`curl -L https://ghst.ly/getbhce | sudo docker-compose -f - up`
+  
+Wait for a few minutes then scroll through the command line output and look for "Initial Password Set To: "  
+  
+Copy the password!
+  
+![image](https://github.com/benlee105/Using-AzureHound/assets/62729308/97c0d208-c1d4-4fa2-ad4f-6ef6cb9fdfe0)
+
+
+## Step 7: Login to BloodHound
+Access http://localhost:8080/ui/login with a browser  
+  
+Login with the credentials:  
+**Username:** admin  
+**Password:** Password from Step 6  
+  
+Change to a new password when prompted. Remember your new password.  
+
+## Step 8: Ingest AzureHound Output
+Click on **File Ingest**.  
+  
+![image](https://github.com/benlee105/Using-AzureHound/assets/62729308/df787250-7297-4681-a2e3-37f7f4e620ea)  
+
+Upload "output.json" from Step 5.  
+
+![image](https://github.com/benlee105/Using-AzureHound/assets/62729308/c7d03bba-f8c7-4acd-bfe6-303246116960)
+
+Once uploaded, wait till ingestion status shows complete then click on **Explore**  
+
+![image](https://github.com/benlee105/Using-AzureHound/assets/62729308/b0f49515-7bf6-4b42-ae99-face9064df12)  
+
+## Step 9: Query BloodHound
+
